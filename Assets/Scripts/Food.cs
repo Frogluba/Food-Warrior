@@ -8,8 +8,8 @@ public class Food : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(0, 10) ;
-        
+        rb.velocity = new Vector2(0,Random.Range(7,13) );
+        rb.angularVelocity = Random.Range(-360, 360);
        
     }
 
